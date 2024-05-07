@@ -54,6 +54,8 @@ g = lambda x,y:x*y
 print(g(3,4))
 print(g(5,6))
 
+#2024.05.07 end
+
 #불변형식
 a = 1.2
 print("a id:", id(a) )
