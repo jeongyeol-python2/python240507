@@ -35,6 +35,25 @@ def connectURI(server, port):
 print(connectURI("multi.com", "80"))
 print(connectURI(port="80", server="naver.com"))
 
+#가변인자 처리
+def union(*ar):
+    #지역변수 저장(list)
+    result = []
+    for item in ar:
+        for x in item:
+            if x not in result:
+                result.append(x)
+    return result
+
+#호출
+print(union("HMM","EGG"))
+print(union("HMM","EGG","SPAM"))
+
+#람다 함수
+g = lambda x,y:x*y
+print(g(3,4))
+print(g(5,6))
+
 #불변형식
 a = 1.2
 print("a id:", id(a) )
