@@ -1,3 +1,7 @@
+# 파이썬을 사용해서 윈도우의 다운로드된 폴더에서 
+# *.jpg, *jpeg를 \images폴더로 이동, *.csv, *.xls,*.xlsx파일은 \data 폴더로 *.txt, *.doc, *.pdf는 \docs 폴더로 *.zip 은 \archive폴더로 이동하는 코드를 생성해줘. 
+# 해당 폴더가 없으면 폴더를 생성해야하고 윈도우 다운로드 폴더는 C:\Users\son\Downloads 야
+
 import os
 import shutil
 
