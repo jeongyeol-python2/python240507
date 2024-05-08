@@ -21,4 +21,4 @@ account1.withdraw(3000)
 
 print(account1)
 #error
-print(account1.__balance)
+#print(account1.__balance)
