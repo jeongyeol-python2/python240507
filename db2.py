@@ -1,11 +1,11 @@
-# db1.py
+# db2.py
 import sqlite3
 
 #전역함수:임시로 메모리에 작업
 #연결객체(인스턴스) : 메모리, 테스트 용도
 #con = sqlite3.connect(":memory:")
 #영구 테이블
-con = sqlite3.connect("c:\\work2\\test.db")
+con = sqlite3.connect("c:\\work2\\simple.db")
 
 #실제 구문 실행 커서 객체
 cur = con.cursor()
@@ -26,15 +26,10 @@ dataList = (("이순신", "010-111-1111"), ("박문수", "010-222-2222"))
 cur.executemany("insert into PhoneBook values (?, ?)", dataList)
 
 #검색
-cur.execute("select * from PhoneBook;")
 
-#for row in cur:
-#    print(row[0], row[1])
-
-print("---fetchone()---")
-print(cur.fetchone())
-print("---fetchmany(2)---")
-print(cur.fetchmany(2))
 print("---fetchall()---")
 cur.execute("select * from PhoneBook;")
 print(cur.fetchall())
+
+#작업 완료
+cur.close()
