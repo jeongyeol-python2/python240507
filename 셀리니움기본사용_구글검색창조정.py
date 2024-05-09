@@ -19,4 +19,6 @@ searchBox = driver.find_element(By.CLASS_NAME, "gLFyf")
 
 searchBox.send_keys("맥북")
 searchBox.send_keys(Keys.RETURN)
-time.sleep(5)
+#time.sleep(5)
+while True:
+    pass
